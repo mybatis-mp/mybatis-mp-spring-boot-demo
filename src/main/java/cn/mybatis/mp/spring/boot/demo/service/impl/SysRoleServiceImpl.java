@@ -4,16 +4,15 @@ import cn.mybatis.mp.core.mybatis.mapper.context.Pager;
 import cn.mybatis.mp.spring.boot.demo.DO.SysRole;
 import cn.mybatis.mp.spring.boot.demo.dao.SysRoleDao;
 import cn.mybatis.mp.spring.boot.demo.service.SysRoleService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.annotation.Resource;
-
 @Service
 public class SysRoleServiceImpl implements SysRoleService {
 
-    @Resource
+    @Autowired
     private SysRoleDao sysRoleDao;
 
     @Override

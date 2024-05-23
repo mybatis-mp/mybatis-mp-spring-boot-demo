@@ -11,5 +11,5 @@ public interface SysRoleService {
 
     int delete(Integer id);
 
-    Pager<SysRole> search(String name,Pager<SysRole> pager);
+    Pager<SysRole> search(String name, Pager<SysRole> pager);
 }

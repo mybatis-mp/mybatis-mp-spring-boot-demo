@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
     <groupId>cn.mybatis-mp</groupId>
@@ -18,7 +18,7 @@
             <dependency>
                 <groupId>cn.mybatis-mp</groupId>
                 <artifactId>mybatis-mp-spring-boot-parent</artifactId>
-                <version>1.4.6</version>
+                <version>1.4.6-spring-boot3</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -53,9 +53,24 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.3.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <parameters>true</parameters>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.7.18</version>
+                <version>3.2.4</version>
                 <executions>
                     <execution>
                         <goals>

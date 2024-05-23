@@ -3,22 +3,18 @@ package cn.mybatis.mp.spring.boot.demo.service.impl;
 import cn.mybatis.mp.core.mybatis.mapper.context.Pager;
 import cn.mybatis.mp.spring.boot.demo.DO.SysUser;
 import cn.mybatis.mp.spring.boot.demo.dao.SysUserDao;
-import cn.mybatis.mp.spring.boot.demo.mapper.SysUserMapper;
 import cn.mybatis.mp.spring.boot.demo.service.SysUserService;
 import cn.mybatis.mp.spring.boot.demo.vo.SysUserVo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 
 @Service
 public class SysUserServiceImpl implements SysUserService {
 
-    @Resource
+    @Autowired
     private SysUserDao sysUserDao;
-
-    @Resource
-    private SysUserMapper sysUserMapper;
 
     @Override
     public void save(SysUser sysUser) {
@@ -38,8 +34,7 @@ public class SysUserServiceImpl implements SysUserService {
 
     @Override
     public SysUser get(Integer id) {
-        return sysUserMapper.getOne1();
-        //return sysUserDao.getById(id);
+        return sysUserDao.getById(id);
     }
 
     @Override

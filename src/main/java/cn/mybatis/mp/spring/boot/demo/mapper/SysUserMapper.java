@@ -15,5 +15,4 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface SysUserMapper extends MybatisMapper<SysUser> {
 
-    SysUser getOne1();
 }

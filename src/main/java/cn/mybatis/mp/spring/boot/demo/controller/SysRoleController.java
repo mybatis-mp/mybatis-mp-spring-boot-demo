@@ -3,18 +3,18 @@ package cn.mybatis.mp.spring.boot.demo.controller;
 import cn.mybatis.mp.core.mybatis.mapper.context.Pager;
 import cn.mybatis.mp.spring.boot.demo.DO.SysRole;
 import cn.mybatis.mp.spring.boot.demo.service.SysRoleService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 
 @RequestMapping("/sys/role")
 @RestController
 public class SysRoleController {
 
-    @Resource
+    @Autowired
     private SysRoleService sysRoleService;
 
     @RequestMapping("/save")

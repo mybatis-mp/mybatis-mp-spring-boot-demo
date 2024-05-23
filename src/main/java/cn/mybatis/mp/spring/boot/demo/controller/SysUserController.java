@@ -6,20 +6,20 @@ import cn.mybatis.mp.spring.boot.demo.service.SysUserService;
 import cn.mybatis.mp.spring.boot.demo.vo.SysUser2Vo;
 import cn.mybatis.mp.spring.boot.demo.vo.SysUser3Vo;
 import cn.mybatis.mp.spring.boot.demo.vo.SysUserVo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
 import java.time.LocalDateTime;
 
 @RequestMapping("/sys/user")
 @RestController
 public class SysUserController {
 
-    @Resource
+    @Autowired
     private SysUserService sysUserService;
 
     @Transactional
