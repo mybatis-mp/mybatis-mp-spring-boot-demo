@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.mybatis.mp.spring.boot.demo.mapper.SysUserMapper">
+
+    <resultMap id="sysUser" type="cn.mybatis.mp.spring.boot.demo.DO.SysUser">
+        <id property="id" column="id"/>
+
+    </resultMap>
+
+    <select id="getOne1" resultMap="sysUser">
+        select id,role_id roleId,name,create_time from sys_user t limit 1
+    </select>
+</mapper>
