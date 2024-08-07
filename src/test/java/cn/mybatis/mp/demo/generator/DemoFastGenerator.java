@@ -37,11 +37,11 @@ public class DemoFastGenerator {
                 })
                 .actionConfig(actionConfig -> {
                     actionConfig
-                            .save(true)
-                            .update(true)
-                            .find(true)
-                            .getById(true)
-                            .deleteById(true)
+                            .enableSave(true)
+                            .enableUpdate(true)
+                            .enableFind(true)
+                            .enableGet(true)
+                            .enableDelete(true)
                             .returnClass(Object.class.getName());
                 })
         ).create();
