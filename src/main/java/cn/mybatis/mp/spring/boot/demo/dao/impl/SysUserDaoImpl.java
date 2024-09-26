@@ -29,8 +29,7 @@ public class SysUserDaoImpl extends DaoImpl<SysUser, Integer> implements SysUser
     @Override
     public SysUserVo getUserInfo(Integer id) {
         return queryChain()
-                .select(SysUser.class)
-                .select(SysRole.class)
+                .select(SysUserVo.class)
                 .select(SysUser::getName, c -> c.concat("").as("copy_name"))
                 .from(SysUser.class)
                 .join(SysUser.class, SysRole.class)
