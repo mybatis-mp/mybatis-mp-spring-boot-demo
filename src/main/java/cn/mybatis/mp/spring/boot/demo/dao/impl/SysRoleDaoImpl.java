@@ -27,7 +27,6 @@ public class SysRoleDaoImpl extends DaoImpl<SysRole, Integer> implements SysRole
     @Override
     public Pager<SysRole> search(String name, Pager<SysRole> pager) {
         return queryChain().forSearch()
-                .and(SysRole::getId,c->c.findInSet("1").gt(0))
                 .like(SysRole::getName, name)
                 .paging(pager);
     }
