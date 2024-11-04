@@ -7,12 +7,12 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <mybatis-mp.version>1.7.2</mybatis-mp.version>
+        <mybatis-mp.version>1.7.3</mybatis-mp.version>
     </properties>
 
     <groupId>cn.mybatis-mp</groupId>
     <artifactId>mybatis-mp-spring-boot-demo</artifactId>
-    <version>1.7.2</version>
+    <version>1.7.3</version>
 
     <dependencyManagement>
         <dependencies>
@@ -45,7 +45,7 @@
 
         <dependency>
             <groupId>cn.mybatis-mp</groupId>
-            <artifactId>mybatis-mp-generator</artifactId>
+            <artifactId>mybatis-mp-generator-core</artifactId>
             <scope>test</scope>
         </dependency>
 

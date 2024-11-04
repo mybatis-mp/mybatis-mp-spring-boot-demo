@@ -1,7 +1,7 @@
 package cn.mybatis.mp.demo.generator;
 
-import cn.mybatis.mp.generator.FastGenerator;
-import cn.mybatis.mp.generator.config.GeneratorConfig;
+import cn.mybatis.mp.generator.core.FastGenerator;
+import cn.mybatis.mp.generator.core.config.GeneratorConfig;
 import db.sql.api.DbType;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
