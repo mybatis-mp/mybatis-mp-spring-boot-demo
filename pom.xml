@@ -7,12 +7,12 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <mybatis-mp.version>1.7.6-RC</mybatis-mp.version>
+        <mybatis-mp.version>1.7.6</mybatis-mp.version>
     </properties>
 
     <groupId>cn.mybatis-mp</groupId>
     <artifactId>mybatis-mp-spring-boot-demo</artifactId>
-    <version>1.7.6-RC</version>
+    <version>1.7.6</version>
 
     <dependencyManagement>
         <dependencies>
@@ -61,7 +61,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.7.18</version>
                 <executions>
                     <execution>
                         <goals>
