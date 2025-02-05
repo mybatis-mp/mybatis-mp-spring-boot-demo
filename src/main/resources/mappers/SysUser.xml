@@ -12,4 +12,9 @@
     <select id="getOne1" resultMap="sysUser">
         select id,role_id roleId,name,create_time from sys_user t limit 1
     </select>
+
+
+    <select id="xmlPaging" resultMap="sysUser">
+        select id,role_id roleId,name,create_time from sys_user t  where id=#{id}
+    </select>
 </mapper>

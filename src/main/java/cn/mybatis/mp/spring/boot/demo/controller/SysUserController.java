@@ -2,10 +2,12 @@ package cn.mybatis.mp.spring.boot.demo.controller;
 
 import cn.mybatis.mp.core.mybatis.mapper.context.Pager;
 import cn.mybatis.mp.spring.boot.demo.DO.SysUser;
+import cn.mybatis.mp.spring.boot.demo.mapper.SysUserMapper;
 import cn.mybatis.mp.spring.boot.demo.service.SysUserService;
 import cn.mybatis.mp.spring.boot.demo.vo.SysUser2Vo;
 import cn.mybatis.mp.spring.boot.demo.vo.SysUser3Vo;
 import cn.mybatis.mp.spring.boot.demo.vo.SysUserVo;
+import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,6 +23,14 @@ public class SysUserController {
 
     @Autowired
     private SysUserService sysUserService;
+
+    @Resource
+    private SysUserMapper sysUserMapper;
+
+    @RequestMapping("/xmlPaging")
+    public Pager<SysUser> xmlPaging() {
+        return sysUserMapper.xmlPaging(Pager.of(1, 2), 1);
+    }
 
     @Transactional
     @RequestMapping("/save")
