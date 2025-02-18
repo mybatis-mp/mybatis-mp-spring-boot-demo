@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.mybatis.mp.spring.boot.demo.mapper.SysUserMapper">
+<mapper namespace="cn.xbatis.spring.boot.demo.mapper.SysUserMapper">
 
-    <resultMap id="sysUser" type="cn.mybatis.mp.spring.boot.demo.DO.SysUser">
+    <resultMap id="sysUser" type="cn.xbatis.spring.boot.demo.DO.SysUser">
         <id property="id" column="id"/>
 
     </resultMap>
