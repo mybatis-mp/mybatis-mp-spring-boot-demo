@@ -1,7 +1,7 @@
-package cn.mybatis.mp.demo.generator;
+package cn.xbatis.demo.generator;
 
-import cn.mybatis.mp.generator.core.FastGenerator;
-import cn.mybatis.mp.generator.core.config.GeneratorConfig;
+import cn.xbatis.generator.core.FastGenerator;
+import cn.xbatis.generator.core.config.GeneratorConfig;
 import db.sql.api.DbType;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
@@ -21,7 +21,7 @@ public class DemoFastGenerator {
                 DbType.H2,
                 dataSource)
                 .baseFilePath(System.getProperty("user.dir") + "/demo-generate")
-                .basePackage("cn.mybatis.mp.spring.boot.demo")
+                .basePackage("cn.xbatis.spring.boot.demo")
                 .finishOpen(true)
                 .tableConfig(tableConfig -> {
                     tableConfig.includeTable("sys_user", "sys_role");

@@ -9,16 +9,16 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
-    <groupId>cn.mybatis-mp</groupId>
-    <artifactId>mybatis-mp-spring-boot-demo</artifactId>
-    <version>1.8.0</version>
+    <groupId>cn.xbatis</groupId>
+    <artifactId>xbatis-spring-boot-demo</artifactId>
+    <version>1.8.1</version>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>cn.mybatis-mp</groupId>
-                <artifactId>mybatis-mp-spring-boot-parent</artifactId>
-                <version>1.8.0-spring-boot3</version>
+                <groupId>cn.xbatis</groupId>
+                <artifactId>xbatis-spring-boot-parent</artifactId>
+                <version>1.8.1-spring-boot3</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -27,13 +27,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>cn.mybatis-mp</groupId>
-            <artifactId>mybatis-mp-spring-boot-starter</artifactId>
+            <groupId>cn.xbatis</groupId>
+            <artifactId>xbatis-spring-boot-starter</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>cn.mybatis-mp</groupId>
-            <artifactId>mybatis-mp-datasource-routing</artifactId>
+            <groupId>cn.xbatis</groupId>
+            <artifactId>xbatis-datasource-routing</artifactId>
         </dependency>
 
         <dependency>
@@ -54,8 +54,8 @@
         </dependency>
 
         <dependency>
-            <groupId>cn.mybatis-mp</groupId>
-            <artifactId>mybatis-mp-generator-core</artifactId>
+            <groupId>cn.xbatis</groupId>
+            <artifactId>xbatis-generator-core</artifactId>
             <scope>test</scope>
         </dependency>
 

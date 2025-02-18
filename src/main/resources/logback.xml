@@ -27,5 +27,5 @@
     </root>
 
     <logger name="org.mybatis" level="trace"/>
-    <logger name="cn.mybatis.mp" level="trace"/>
+    <logger name="cn.xbatis" level="trace"/>
 </configuration>
